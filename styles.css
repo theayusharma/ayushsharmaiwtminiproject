@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://images.pexels.com/photos/5623106/pexels-photo-5623106.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 20px;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 100%;
+    max-width: 600px;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin:10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    resize: none;
+}
+
+input[type="file"] {
+    padding: 9px 20px;
+    background-color: #6b6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1fa389;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #62f0d4;
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.post {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(36, 34, 34, 0.2);
+    max-width: 100%;
+    width: 100%;
+
+    margin: 0 auto; 
+    position: relative;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.timestamp {
+    font-size: 14px;
+    color: #999;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.actions button {
+    background-color: #65ffd3;
+    padding: 8px 16px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+    background-color: #65ffd3;
+}
+
+@media (min-width: 768px) {
+    .posts-container {
+        flex-direction: column;
+    }
+}
